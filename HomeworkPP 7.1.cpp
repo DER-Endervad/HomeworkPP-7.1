@@ -9,7 +9,8 @@ int main()
     std::map<char, int> my_map;
     std::multimap<int, char> sort_map;
     for (const char& input : in) {
-        bool true_false = true;
+        my_map[input] += 1;
+        /*bool true_false = true;
         for (auto& elem : my_map) {
             if (elem.first == input) {
                 elem.second = elem.second + 1;
@@ -18,7 +19,7 @@ int main()
         }
         if (true_false) {
             my_map[input] = 1;
-        }
+        }*/
     }
     typedef std::pair <int, char> Int_Pair;
     for (const auto& elem : my_map) {

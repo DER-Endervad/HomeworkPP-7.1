@@ -8,9 +8,6 @@ int main()
     std::cout << "[IN]: " << in << std::endl;
     std::map<char, int> my_map;
     std::multimap<int, char> sort_map;
-    for (int i = 0; i < in.size(); ++i) {
-
-    }
     for (const char& input : in) {
         bool true_false = true;
         for (auto& elem : my_map) {
